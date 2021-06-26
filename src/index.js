@@ -1,13 +1,13 @@
 const express = require('express');
 const chawk = require('chalk');
 const { default: chalk } = require('chalk');
-const Task = require('./router/note')
+const Note = require('./router/note')
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json())
-app.use('/note',Task);
+app.use('/note',Note);
 
 
 
