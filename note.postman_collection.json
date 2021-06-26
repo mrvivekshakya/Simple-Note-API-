@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "5212a7be-0f98-4ae7-b2ee-0f401ac420cd",
+		"name": "note",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add New Note",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"focus on good things.\",\r\n    \"body\": \"it's all fack.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/note",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/note",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note by Title",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/note/title/note5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note",
+						"title",
+						"note5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note by UUID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/note/80216db3-e730-4b14-83ca-8edab4ccf0b0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note",
+						"80216db3-e730-4b14-83ca-8edab4ccf0b0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Note by Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/note/title/note4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note",
+						"title",
+						"note4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Note by UUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/note/fde0543c-379b-4592-a4ba-bb12380e8419",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"note",
+						"fde0543c-379b-4592-a4ba-bb12380e8419"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
